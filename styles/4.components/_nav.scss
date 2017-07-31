@@ -1,0 +1,231 @@
+.c-main-nav {
+  font-size: 0;
+  text-align: center;
+
+  @media (min-width: $screen-md) {
+    text-align: justify;
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 50%;
+  }
+
+  &__mobile {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    font-size: 16px;
+    margin: 0;
+
+    @media (min-width: $screen-md) {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &__logo-horizontal {
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__logo-vertical {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: inline;
+    }
+  }
+
+  &__list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    @media (max-width: $screen-sm-max) {
+      background-color: $gray-medium;
+      max-height: 0;
+      overflow: hidden;
+      transition: .2s ease-out;
+
+      .is-mobile-active & {
+        max-height: 1000px;
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      position: static;
+      display: inline-block;
+      vertical-align: bottom;
+      width: auto;
+      margin: 10px 0 5px;
+      text-align: left;
+    }
+  }
+
+  &__item {
+    position: relative;
+    text-transform: uppercase;
+
+    @media (min-width: $screen-md) {
+      display: inline-block;
+      padding-bottom: 10px;
+
+      &:hover {
+        .c-main-nav-sub {
+          display: block;
+          opacity: 1;
+          max-height: none;
+        }
+      }
+    }
+
+    &:first-child::before {
+      @media (min-width: $screen-md) {
+        content: '|';
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        margin-right: 8px;
+      }
+    }
+
+    &::after {
+      @media (min-width: $screen-md) {
+        content: '|';
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        margin: 0 4px 0 8px;
+      }
+    }
+  }
+
+  &__link {
+    @media (max-width: $screen-sm-max) {
+      display: block;
+      color: $white;
+      padding-top: .5em;
+      padding-bottom: .5em;
+    }
+
+    color: $text-color;
+    text-decoration: none;
+  }
+}
+
+.c-main-nav-sub {
+  background-color: $gray-light;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: opacity .2s ease-out;
+
+  @media (max-width: $screen-sm-max) {
+    position: relative;
+    padding-top: 10px;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 0;
+      width: 0;
+      position: absolute;
+      top: -1px;
+      left: 50%;
+      border-style: solid;
+      border-width: 10px;
+      border-color: $gray-medium transparent transparent;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    max-height: 0;
+    min-width: 200px;
+    background-color: $white;
+    box-shadow: 0 3px 3px rgba($black, .3);
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  &__item {
+    font-size: 15px;
+  }
+
+  &__link {
+    display: block;
+    color: $text-color;
+    padding: 5px 15px;
+    text-decoration: none;
+
+    // &:hover,
+    // &:focus {
+    //   color: $white;
+    // }
+  }
+}
+
+.c-channels-list {
+  display: none;
+  vertical-align: bottom;
+  font-size: 16px;
+  list-style: none;
+  margin: 0 0 15px;
+
+  @media (min-width: $screen-lg) {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    height: 30px;
+    width: 30px;
+    background-color: $brand-primary;
+    border-radius: 50%;
+    line-height: 30px;
+  }
+
+  &__item {
+    display: inline-block;
+    text-align: center;
+    margin-left: -1px;
+  }
+}
+
+.c-side-nav {
+  list-style: none;
+  max-width: 235px;
+  padding-left: 25px;
+
+  &__link {
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: $text-color;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $gray-medium;
+      color: $white;
+    }
+  }
+}

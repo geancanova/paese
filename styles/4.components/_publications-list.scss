@@ -1,0 +1,20 @@
+.c-publications-list {
+  list-style: none;
+  padding: 0;
+  margin-left: -11px;
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 11px;
+    margin-bottom: 20px;
+
+    &--report {
+      width: 167px;
+    }
+
+    &--primer {
+      width: 218px;
+    }
+  }
+}

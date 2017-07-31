@@ -1,0 +1,53 @@
+.c-faq-list {
+  list-style: none;
+  padding: 0;
+
+  &__item {
+    padding: 10px;
+
+    &.is-active {
+      background-color: $gray-light;
+
+      .c-faq-list__content {
+        max-height: 100vh;
+      }
+    }
+  }
+
+  &__number,
+  &__title {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+
+  &__number {
+    display: inline-block;
+    font-size: 40px;
+    color: #abb1b1;
+    margin-right: 15px;
+  }
+
+  &__title {
+    font-size: 16px;
+    margin: 0;
+
+    @media (max-width: 600px) {
+      max-width: 200px;
+    }
+  }
+
+  &__header {
+    cursor: pointer;
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 62px;
+    transition: all .5s ease-out;
+
+    p:first-child {
+      margin-top: 0;
+    }
+  }
+}

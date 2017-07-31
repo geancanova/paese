@@ -82,10 +82,10 @@ function findKeyText(data, txt) {
 }
 
 gulp.task('styles', function() {
-  gulp.src('styles/*.scss')
+  gulp.src(['styles/*.scss', '!styles/_*.scss'])
   .pipe(plumber({ errorHandler: onError }))
   .pipe(sourcemaps.init())
-  .pipe(sass({indentedSyntax: true}))
+  .pipe(sass())
   .pipe(autoprefixer({
     browsers: ['last 5 versions'],
     cascade: false}))
@@ -98,7 +98,9 @@ gulp.task('styles', function() {
 gulp.task('templates', function() {
   gulp.src('./*.pug')
   .pipe(plumber({ errorHandler: onError }))
-  .pipe(pug())
+  .pipe(pug({
+    pretty: true
+  }))
   .pipe(gulp.dest('build/'));
 });
 

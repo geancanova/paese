@@ -1,0 +1,28 @@
+.c-main-title {
+  font: normal 18px $font-family-bold;
+  margin-top: 0;
+  text-transform: uppercase;
+
+  &--detail {
+    position: relative;
+    padding-left: 45px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -30px;
+      left: 0;
+      display: block;
+      height: 0;
+      width: 0;
+      border-width: 45px 26px;
+      border-color: transparent;
+      border-style: solid;
+      border-top-color: $brand-primary;
+    }
+  }
+}
+
+.c-main-subtitle {
+  font-size: 16px;
+}

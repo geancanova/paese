@@ -1,0 +1,109 @@
+extends ./templates/layout.pug
+
+block vars
+  - var title = 'Sócios | Equipe |'
+  - var description = 'Este é o espaço institucional do escritório Paese, Ferreira & Advogados Associados. Aqui o usuário encontra informações básicas sobre nossas áreas de atuação, quem são os advogados de nossa equipe, quais as questões mais recorrentes de nossos clientes, links para instituições correlatas, artigos, publicações e notícias do mundo do trabalho.'
+
+block content
+  main#main-content.c-main-content
+    .o-content-block
+      .o-row
+        // Coluna Menu
+        .c-main-content__col.c-main-content__col--side.o-col
+          h2.c-main-title.c-main-title--detail Equipe
+          ul.c-side-nav
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Sócios
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Advogados
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Estagiários
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Administrativo
+
+        // Coluna Conteúdo
+        .c-main-content__col.c-main-content__col--main.o-col
+          h1.c-main-title Sócios
+
+          .c-partners
+            .c-gray-box
+              h2.c-partners__title Raquel Paese
+                span - OAB/RS 15.663
+              .o-row
+                .c-partners__col-img.o-col
+                  img(src="/img/raquel-paese.png", alt="Raquel Paese")
+                .o-col
+                  p Uma das fundadoras do escritório. Graduada em Direito pela UFRGS (1982), com pós-graduação latu sensu em Relações de Trabalho pela Faculdade de Ciências Econômicas da UFRGS (2010). Vice-presidente da AGETRA – Associação Gaúcha dos Advogados Trabalhistas (1997/1998), tendo sido Conselheira e Diretora em outras gestões. Integra o Coletivo Jurídico da CUT/RS. Coordenadora do site Democracia e Mundo do Trabalho em Debate. Atua na área do Direito Trabalhista e Sindical.
+
+            p
+              strong Glênio Ohlweiler Ferreira
+              | - OAB/RS 23.021
+              br
+              br
+              strong Renato Kliemann Paese
+              | - OAB/RS 29.134
+              br
+              br
+              strong Fernanda Palombini Moralles
+              | - OAB/RS 36.321
+              br
+              br
+              strong Marcelo Lipert
+              | - OAB/RS 41.818
+              br
+              br
+              strong Marí Rosa Agazzi
+              | - OAB/RS 41.955
+              br
+              br
+              strong Thiago Cecchini Brunetto
+              | - OAB/RS 51.519
+              br
+              br
+              strong Ingrid Renz Birnfeld
+              | - OAB/RS 51.641
+              br
+              br
+              strong Samara Ferrazza Antonini
+              | - OAB/RS 53.069
+              br
+              br
+              strong Cristiano Ohlweiler Ferreira
+              | - OAB/RS 53.720
+              br
+              br
+              strong Wanda Elisabeth Dupke
+              | - OAB/RS 48.754
+              br
+              br
+              strong Fabiana Ferreira da Silva
+              | - OAB/RS 59.046
+              br
+              br
+              strong Tiago Gornicki Schneider
+              | - OAB/RS 68.833
+              br
+              br
+              strong Luis Felipe Braun Ávila
+              | - OAB/RS 61.895
+              br
+              br
+              strong Silvio Eduardo Fontana Boff
+              | - OAB/RS 49.807
+              br
+              br
+              strong Saulo Oliveira do Nascimento
+              | - OAB/RS 72.958
+              br
+              br
+              strong Angelina Inês Castro Mattia
+              | - OAB/RS 73.109
+              br
+              br
+              strong Elisa Torelly
+              | - OAB/RS 76.371
+              br
+              br
+              strong Pablo Drescher de Castro
+              | - OAB/RS 82.739
+

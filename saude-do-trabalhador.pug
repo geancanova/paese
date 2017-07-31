@@ -1,0 +1,37 @@
+extends ./templates/layout.pug
+
+block vars
+  - var title = 'Saúde do Trabalhador | Áreas de Atuação |'
+  - var description = 'Este é o espaço institucional do escritório Paese, Ferreira & Advogados Associados. Aqui o usuário encontra informações básicas sobre nossas áreas de atuação, quem são os advogados de nossa equipe, quais as questões mais recorrentes de nossos clientes, links para instituições correlatas, artigos, publicações e notícias do mundo do trabalho.'
+
+block content
+  main#main-content.c-main-content
+    .o-content-block
+      .o-row
+        // Coluna Menu
+        .c-main-content__col.c-main-content__col--side.o-col
+          h2.c-main-title.c-main-title--detail Áreas de Atuação
+          ul.c-side-nav
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Trabalhador CLT
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Saúde do Trabalhador
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Assessoria Sindical
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Previdenciário
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Servidor Público
+
+        // Coluna Conteúdo
+        .c-main-content__col.c-main-content__col--main.o-col
+          h1.c-main-title Saúde do Trabalhador
+          h2.c-main-subtitle Para acidentes do trabalho e doenças profissionais.
+          p Na área de Saúde do Trabalhador, o Escritório atua na defesa dos interesses de trabalhadores de empresas privadas ou públicas, essas vinculadas à Administração Pública direta e indireta, especialmente na esfera judicial. Atende, também, aos herdeiros dos trabalhadores vitimados por acidentes/doenças de trabalho que lhes tenham ocasionado morte, na busca das indenizações decorrentes da responsabilidade civil do empregador. Assim, defende tanto demandas individuais como coletivas dos trabalhadores vinculados ou não a entidades sindicais e associações de trabalhadores assessoradas pelo escritório. Nesta mesma área de atuação, estão compreendidas demandas relativas ao assédio moral e sexual no trabalho.
+          h2.c-main-subtitle Sobre as principais demandas (individuais e coletivas):
+          ul
+            li Ação judicial contra o empregador buscando indenização, inclusive em favor dos familiares e dependentes, quando o trabalhador foi acometido de doença ou acidente de trabalho;
+            li Ação judicial de reconhecimento de acidente ou doença do trabalho;
+            li Ação judicial para concessão ou restabelecimento de benefícios decorrentes de acidente ou doença do trabalho;
+            li Ação judicial por danos morais resultante da prática de assédio moral e/ou sexual;
+            li Requerimentos administrativos de benefícios no INSS e orientação para emissão e encaminhamento das Comunicações de Acidentes do Trabalho - CAT.

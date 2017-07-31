@@ -1,0 +1,73 @@
+.c-main-content {
+  overflow: hidden;
+
+  &__col {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &--side,
+    &--side-reverse {
+      position: relative;
+      background-color: $gray;
+
+      @media (max-width: $screen-xs-max) {
+        margin-left: -5.555555555555556%;
+        margin-right: -5.555555555555556%;
+      }
+
+      @media (min-width: $screen-sm) {
+        width: 30.21978021978022%;
+
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: $gray;
+        }
+      }
+
+    }
+
+    &--side {
+      &::after {
+        right: 100%;
+      }
+    }
+
+    &--side-reverse {
+      &::after {
+        left: 100%;
+      }
+    }
+
+    &--main,
+    &--main-reverse {
+      position: relative;
+
+      p a {
+        color: $text-color;
+        font-family: $font-family-bold;
+        text-decoration: none;
+
+        &:hover {
+          color: lighten($text-color, 8%);
+        }
+      }
+    }
+
+    &--main {
+      @media (min-width: $screen-sm) {
+        padding-left: 45px;
+      }
+    }
+
+    &--main-reverse {
+      @media (min-width: $screen-sm) {
+        padding-right: 45px;
+      }
+    }
+  }
+}

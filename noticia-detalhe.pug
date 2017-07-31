@@ -1,0 +1,85 @@
+extends ./templates/layout.pug
+
+block vars
+  - var title = 'Reforma trabalhista não terá efeitos positivos sobre o emprego | Notícias |'
+  - var description = 'Este é o espaço institucional do escritório Paese, Ferreira & Advogados Associados. Aqui o usuário encontra informações básicas sobre nossas áreas de atuação, quem são os advogados de nossa equipe, quais as questões mais recorrentes de nossos clientes, links para instituições correlatas, artigos, publicações e notícias do mundo do trabalho.'
+
+block content
+  #fb-root
+  script.
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+  main#main-content.c-main-content
+    .o-content-block
+      .o-row
+
+        // Coluna Conteúdo
+        .c-main-content__col.c-main-content__col--main-reverse.o-col
+          h2.c-main-title.c-main-title--detail Notícias
+
+          .c-news-post
+            span.c-news-post__date 16/03/17
+            h1.c-news-post__title "Reforma trabalhista não terá efeitos positivos sobre o emprego"
+            img(src="https://placeimg.com/538/345/any", alt="Reforma trabalhista não terá efeitos positivos sobre o emprego")
+            p Marcio Pochmann, professor de economia da Unicamp e ex-presidente do Ipea nos governos petistas, rejeita raciocínio de que tornar mão de obra mais barata para empresários vai gerar emprego.
+            p #[strong DW Brasil: Em artigos recentes, o senhor critica aspectos da reforma. Para o governo, ela é crucial para a geração de empregos. Qual sua opinião?]
+            p #[strong Marcio Pochmann:] Essa avaliação de que a legislação trabalhista é antiquada e precisa ser atualizada faz parte de uma interpretação de que a lei trabalhista é elemento de redução da possibilidade de contratação. A experiência que tivemos das reformas da década de 1990 não produziu resultados econômicos e laborais sustentáveis e defensáveis. A melhora do emprego não ocorreu no período.
+            p Dos anos 2000 até a primeira década deste século, mais de 22 milhões de postos de trabalho foram abertos. E ao mesmo tempo a taxa de empregos formais cresceu significativamente com a defesa de políticas públicas, elevação do salário mínimo e, de certa maneira, ampliação da legislação trabalhista para segmentos que estavam distantes, como os trabalhadores domésticos.
+            p O fato é que estamos há dois anos em recessão, e a economia brasileira vem retroagindo. Possivelmente o PIB brasileiro tenha caído quase 10%, considerando 2015 e 2016, e não há sinais de que o Brasil volte a crescer em 2017. A  reforma trabalhista é apresentada como elemento necessário para a ampliação de emprego e para destravar o crescimento econômico. Não me parece, olhando para o Brasil, que a reforma trabalhista, a flexibilização, redução de direitos, etc, possam ter efeitos positivos sobre o emprego. O crescimento econômico está relacionado a outras determinações que não o emprego.
+            p #[strong DW Brasil: Mas o raciocínio é que, ao flexibilizar as negociações, cria-se um ambiente favorável para mais contratações. O senhor não concorda?]
+            p #[strong MP:] Se o empresário tiver condições de contratar por menor custo o trabalhador, então esse empresário também tem condição de reduzir o custo final de produção e vender o produto mais barato. Nesse sentido, mais pessoas comprariam o seu produto, já que ele venderia mais barato.
+            p Se você tem uma mudança de legislação que te permite reduzir direitos, reduzir o custo da mão de obra e da produção, todas as empresas vão adotar isso. Você vai ter rebaixamento de salários. Com salários menores, os empregados não terão condições de comprar o que compravam anteriormente.
+
+            // Adicionar aqui plugin para compartilhamento da notícia
+
+        // Coluna Sidebar
+        .c-main-content__col.c-main-content__col--side-reverse.o-col
+          .c-side-news
+            ul.c-side-news-list
+              li.c-side-news-list__item
+                .c-side-news-featured
+                  a(href="#")
+                    img.c-side-news-featured__img(src="https://placeimg.com/283/188/any", alt="Aposentadoria especial pode ser instruída apenas por perfil profissiográfico")
+                    .c-side-news__date 17/02/17
+                    h3.c-side-news-featured__title Aposentadoria especial pode ser instruída apenas por perfil profissiográfico
+              li.c-side-news-list__item
+                a(href="#")
+                  .c-side-news-list__content
+                    .c-side-news__date 17/02/17
+                    h3.c-side-news-list__title Dieese: PEC da Previdência é maior desafio desde a Constituinte
+                  .c-side-news-list__img
+                    img(src="https://placeimg.com/129/92/any", alt="Dieese: PEC da Previdência é maior desafio desde a Constituinte")
+              li.c-side-news-list__item
+                a(href="#")
+                  .c-side-news-list__content
+                    .c-side-news__date 17/02/17
+                    h3.c-side-news-list__title Dieese: PEC da Previdência é maior desafio desde a Constituinte
+                  .c-side-news-list__img
+                    img(src="https://placeimg.com/129/92/any", alt="Dieese: PEC da Previdência é maior desafio desde a Constituinte")
+              li.c-side-news-list__item
+                a(href="#")
+                  .c-side-news-list__content
+                    .c-side-news__date 17/02/17
+                    h3.c-side-news-list__title Dieese: PEC da Previdência é maior desafio desde a Constituinte
+                  .c-side-news-list__img
+                    img(src="https://placeimg.com/129/92/any", alt="Dieese: PEC da Previdência é maior desafio desde a Constituinte")
+              li.c-side-news-list__item
+                a(href="#")
+                  .c-side-news-list__content
+                    .c-side-news__date 17/02/17
+                    h3.c-side-news-list__title Dieese: PEC da Previdência é maior desafio desde a Constituinte
+                  .c-side-news-list__img
+                    img(src="https://placeimg.com/129/92/any", alt="Dieese: PEC da Previdência é maior desafio desde a Constituinte")
+
+            a(href="#").c-side-news__btn Veja todas as notícias
+
+            .fb-page(data-href="https://www.facebook.com/Escritorio-Paese-Ferreira-E-Associados-348232358672022/", data-small-header="true", data-adapt-container-width="true", data-hide-cover="false", data-show-facepile="true", style="width: 100%")
+              blockquote(cite="https://www.facebook.com/Escritorio-Paese-Ferreira-E-Associados-348232358672022/", class="fb-xfbml-parse-ignore")
+                a(href="https://www.facebook.com/Escritorio-Paese-Ferreira-E-Associados-348232358672022/") Escritorio Paese, Ferreira E Associados
+

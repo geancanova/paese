@@ -1,0 +1,64 @@
+extends ./templates/layout.pug
+
+block vars
+  - var title = 'Administrativo | Equipe |'
+  - var description = 'Este é o espaço institucional do escritório Paese, Ferreira & Advogados Associados. Aqui o usuário encontra informações básicas sobre nossas áreas de atuação, quem são os advogados de nossa equipe, quais as questões mais recorrentes de nossos clientes, links para instituições correlatas, artigos, publicações e notícias do mundo do trabalho.'
+
+block content
+  main#main-content.c-main-content
+    .o-content-block
+      .o-row
+        // Coluna Menu
+        .c-main-content__col.c-main-content__col--side.o-col
+          h2.c-main-title.c-main-title--detail Equipe
+          ul.c-side-nav
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Sócios
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Advogados
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Estagiários
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Administrativo
+
+        // Coluna Conteúdo
+        .c-main-content__col.c-main-content__col--main.o-col
+          h1.c-main-title Administrativo
+
+          p Para bem atender e dar total atenção e segurança aos seus clientes, o
+            strong
+             em Escritório Paese, Ferreira & Advogados Associados
+            |  conta com uma estrutura que começa com amplas instalações físicas, divididas em dois andares, e prossegue, além dos advogados, com uma equipe de mais de 35 profissionais na área administrativa, desde a área de recepção, passando pelas áreas técnicas de informática, contabilidade e perícias.
+          hr
+          p
+            strong Coordenação Administrativa
+            br
+            br
+            strong Coordenação Financeira
+            br
+            br
+            strong Atendimento
+            br
+            br
+            strong Telefonia
+            br
+            br
+            strong Apoio Direito Privado
+            br
+            br
+            strong Apoio Direito Público
+            br
+            br
+            strong Apoio Direito Previdenciário
+            br
+            br
+            strong Apoio Administrativo
+            br
+            br
+            strong Financeiro
+            br
+            br
+            strong Arquivo
+            br
+            br
+            strong Serviços Gerais

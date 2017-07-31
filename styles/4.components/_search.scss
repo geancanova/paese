@@ -1,0 +1,21 @@
+.c-search {
+  margin-bottom: 30px;
+
+  &__input,
+  &__btn {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__input {
+    width: 73%;
+    background: $white url('../img/ico-lupa.png') no-repeat 5px center;
+    border: 1px solid $gray-medium;
+    padding-left: 30px;
+  }
+
+  &__btn {
+    width: 25%;
+    padding: 2px 5px;
+  }
+}

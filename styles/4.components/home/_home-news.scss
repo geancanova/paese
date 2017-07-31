@@ -1,0 +1,139 @@
+.c-home-news {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (max-width: $screen-xs-max) {
+    background-color: #f0f0f0;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+
+  &__col {
+    position: relative;
+    background-color: $white;
+
+    @media (max-width: $screen-xs-max) {
+      box-shadow: 0 0 4px rgba($black, .3);
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    & + .c-home-news__col {
+      &::before {
+        @media (min-width: $screen-sm) {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: -18px;
+          width: 1px;
+          background-color: #dadddd;
+        }
+      }
+    }
+
+    &--featured {
+      padding: 0;
+
+      @media (min-width: $screen-sm) {
+        width: 41.55963302752294%;
+      }
+
+      .slick-dots {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        list-style: none;
+        margin: 0 0 5px;
+        text-align: center;
+
+        li {
+          display: inline-block;
+          height: 13px;
+          width: 13px;
+          background-color: $gray-medium;
+          border-radius: 50%;
+          cursor: pointer;
+          margin: 0 2px;
+
+          button {
+            opacity: 0;
+          }
+
+          &.slick-active {
+            background-color: $brand-primary;
+          }
+        }
+      }
+    }
+  }
+
+  &__item {
+    p {
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &--featured {
+      background-color: $gray-light;
+
+      p {
+        font-size: 15px;
+        padding: 10px 10px 40px;
+      }
+    }
+  }
+
+  &__date {
+    display: inline-block;
+    margin-top: 15px;
+  }
+
+  &__title {
+    font: normal 16px $font-family-bold;
+    margin: 0;
+  }
+
+  &__more {
+    display: block;
+    text-align: center;
+
+    @media (min-width: $screen-sm) {
+      display: inline-block;
+      margin-top: 20px;
+      text-align: left;
+    }
+  }
+}
+
+.c-home-news-card {
+  position: relative;
+  color: $white;
+
+  &__txt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+  }
+
+  &__date {
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  &__title {
+    font: normal 20px $font-family-bold;
+    margin: 0;
+  }
+}
+

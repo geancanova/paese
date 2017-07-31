@@ -1,0 +1,50 @@
+.c-media-list {
+  list-style: none;
+  padding: 0;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  &__title,
+  p {
+    margin: 0;
+  }
+
+  &__item {
+    @extend .o-row;
+    line-height: 1.2;
+    border-bottom: 1px solid $gray-medium;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__img,
+  &__content {
+    @extend .o-col;
+  }
+
+  &__img {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-sm) {
+      width: 25.73426573426573%;
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    @media (min-width: $screen-sm) {
+      padding-left: 15px;
+    }
+  }
+
+  &__date {
+    display: block;
+  }
+
+  &__title {
+    font: normal 22px $font-family-bold;
+  }
+}

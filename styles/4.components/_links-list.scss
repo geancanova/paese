@@ -1,0 +1,57 @@
+.c-links-list {
+  list-style: none;
+  padding: 0;
+  margin-left: -5px;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    margin-left: 5px;
+
+    @media (min-width: 425px) {
+      display: inline-block;
+      vertical-align: top;
+      width: 48%;
+    }
+
+    @media (min-width: 650px) {
+      width: 32%;
+    }
+
+    @media (min-width: $screen-sm) {
+      width: 48%;
+    }
+
+    @media (min-width: $screen-md) {
+      width: 32%;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 171px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    display: block;
+    height: 171px;
+    border: 1px solid $gray;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__name {
+    display: block;
+    font-size: 14px;
+    padding: 5px 0 0;
+  }
+}

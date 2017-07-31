@@ -1,0 +1,40 @@
+.c-pagination {
+  display: inline-block;
+  list-style: none;
+  border: 1px solid #dfdfdf;
+  border-radius: 4px;
+  padding: 0;
+
+  &__item {
+    display: inline-block;
+    border-right: 1px solid #dfdfdf;
+
+    & + & {
+      margin-left: -4px;
+    }
+
+    &:last-child {
+      border-right: none;;
+    }
+
+    &.is-active {
+      border-color: $text-color;
+
+      .c-pagination__link {
+        background-color: $text-color;
+        color: $white;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 2px 7px;
+    color: $text-color;
+    text-decoration: none;
+
+    @media (min-width: 425px) {
+      padding: 2px 8px;
+    }
+  }
+}

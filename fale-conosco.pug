@@ -1,0 +1,72 @@
+extends ./templates/layout.pug
+
+block vars
+  - var title = 'Fale Conosco | Contato |'
+  - var description = 'Este é o espaço institucional do escritório Paese, Ferreira & Advogados Associados. Aqui o usuário encontra informações básicas sobre nossas áreas de atuação, quem são os advogados de nossa equipe, quais as questões mais recorrentes de nossos clientes, links para instituições correlatas, artigos, publicações e notícias do mundo do trabalho.'
+
+block content
+  main#main-content.c-main-content
+    .o-content-block
+      .o-row
+        // Coluna Menu
+        .c-main-content__col.c-main-content__col--side.o-col
+          h2.c-main-title.c-main-title--detail Contato
+          ul.c-side-nav
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Fale Conosco
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Localização
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Trabalhe Conosco
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Atualização Cadastral
+
+        // Coluna Conteúdo
+        .c-main-content__col.c-main-content__col--main.o-col
+          h1.c-main-title Fale Conosco
+          p No formulário abaixo você pode nos enviar críticas, sugestões e solicitar informações que serão recebidas e respondidas por e-mail. Para tanto, basta preencher os dados de contato.
+          hr
+          .c-contact
+            form
+              .o-grid-padded.o-grid-padded--sm
+                .o-row
+                  .o-col
+                    .c-form-group
+                      input.o-input(type="text", placeholder="Nome", required)
+                  .o-col
+                    .c-form-group
+                      input.o-input(type="text", placeholder="Telefone", required)
+                .o-row
+                  .o-col
+                    .c-form-group
+                      input.o-input(type="email", placeholder="E-mail", required)
+                .o-row
+                  .o-col
+                    .c-form-group
+                      label(for="state") Estado
+                      .c-select-wrapper
+                        select(name="estado", id="state")
+                          option(value="") Selecione
+                  .o-col
+                    .c-form-group
+                      label(for="city") Cidade
+                      .c-select-wrapper
+                        select(name="cidade", id="city")
+                          option(value="") Selecione
+                .o-row
+                  .o-col
+                    .c-form-group
+                      input.o-input(type="text", placeholder="Assunto", required)
+                .o-row
+                  .o-col
+                    .c-form-group
+                      textarea.o-input.o-input--textarea(rows="5", placeholder="Mensagem", required)
+                .o-row
+                  .o-col
+                    .c-captcha
+                      img(src="https://placeimg.com/229/56/any", alt="captcha")
+                    button.o-btn.o-btn--primary(type="submit") Enviar
+
+
+
+

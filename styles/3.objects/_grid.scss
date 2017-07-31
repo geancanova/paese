@@ -1,0 +1,54 @@
+@media (min-width: $screen-sm) {
+  .o-row {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+
+    &--rtl {
+      direction: rtl;
+    }
+  }
+
+  .o-col {
+    display: table-cell;
+    vertical-align: top;
+
+    .o-row--rtl & {
+      direction: ltr;
+    }
+
+    .o-row--vmiddle & {
+      vertical-align: middle;
+    }
+
+    &--search {
+      width: 60%;
+    }
+  }
+
+  .o-grid-padded {
+    margin-left: -50px;
+    margin-right: -50px;
+
+    > .o-row {
+      border-spacing: 50px 0;
+    }
+
+    &--sm {
+      margin-left: -36px;
+      margin-right: -36px;
+
+      > .o-row {
+        border-spacing: 36px 0;
+      }
+    }
+  }
+}
+
+@media print {
+  .o-row,
+  .o-col {
+    width: 100%;
+    display: block;
+  }
+}

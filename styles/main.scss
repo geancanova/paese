@@ -1,3 +1,67 @@
-@import 'modules/normalize.scss'
-@import 'modules/reset.scss'
+@import
+
+  // Any non-rendering / configuration (eg. animation keyframes) code goes here.
+  "1.config/variables",
+  "1.config/mixins",
+  "1.config/fonts",
+
+
+  // Base styles are inherited, so they shouldn't use classes.
+  // Use sparingly.
+  "2.base/normalize",
+  "2.base/default",
+  "2.base/scaffold",
+  "2.base/links",
+  "2.base/images",
+  "2.base/lists",
+  "2.base/forms",
+  "2.base/slick",
+
+
+  // repeatable ui patterns. Use namespaced classes from now on.
+  // preferably objects are not cosmetic and don't have children elements.
+  // example: o-row
+  "3.objects/grid",
+  "3.objects/button",
+  "3.objects/input",
+  "3.objects/content-block",
+
+
+  // Components. Use BEM naming. (c-block__element--modifier)
+  // Namespace example: c-primary-nav
+  // In case of page-based components, they can be organized in subfolders.
+  "4.components/goto-content",
+  "4.components/header",
+  "4.components/nav",
+  "4.components/main-content",
+  "4.components/media-list",
+  "4.components/form-group",
+  "4.components/captcha",
+  "4.components/contact",
+  "4.components/gray-box",
+  "4.components/links-list",
+  "4.components/news-post",
+  "4.components/news-form",
+  "4.components/pagination",
+  "4.components/partners",
+  "4.components/publication",
+  "4.components/publications-list",
+  "4.components/search",
+  "4.components/select-wrapper",
+  "4.components/side-news",
+  "4.components/faq-list",
+  "4.components/footer",
+  "4.components/type",
+
+  "4.components/home/banner",
+  "4.components/home/occupation-area",
+  "4.components/home/home-news",
+
+
+  // Trump partials should be used to override most previous styles.
+  // They usually carry !important declarations. (However it would be best if
+  // we relied solely on source order to define specificity.)
+  // Namespace example: u-hidden
+  "5.trumps/utils",
+  "5.trumps/print";
 

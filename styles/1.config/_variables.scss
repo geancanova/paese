@@ -1,0 +1,33 @@
+// Colors
+$brand-primary:    #a1bc85;
+
+$gray:             #cfd3d2;
+$gray-light:       #e7e9e8;
+$gray-medium:      #5b6161;
+$gray-dark:        #434746;
+
+$black:            #000;
+$white:            #fff;
+
+// Objects
+$text-color:       $gray-medium;
+$link-color:       $brand-primary;
+$link-hover-color: darken($link-color, 10%);
+
+$selection-bg-color: $link-color;
+$selection-text-color: $white;
+
+$btn-color-primary: $white;
+
+// Typography
+$font-family-base: 'Dax Regular', sans-serif;
+$font-family-bold: 'Dax Bold', sans-serif;
+$font-family-extrabold: 'Dax Extrabold', sans-serif;
+
+// Screen Sizes
+$screen-xs-max: 767px;
+$screen-sm:     768px;
+$screen-sm-max: 1023px;
+$screen-md:     1024px;
+$screen-md-max: 1199px;
+$screen-lg:     1200px;

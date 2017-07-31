@@ -1,0 +1,84 @@
+extends ./templates/layout.pug
+
+block vars
+  - var title = 'Links | Informe-se |'
+  - var description = 'Este é o espaço institucional do escritório Paese, Ferreira & Advogados Associados. Aqui o usuário encontra informações básicas sobre nossas áreas de atuação, quem são os advogados de nossa equipe, quais as questões mais recorrentes de nossos clientes, links para instituições correlatas, artigos, publicações e notícias do mundo do trabalho.'
+
+block content
+  main#main-content.c-main-content
+    .o-content-block
+      .o-row
+        // Coluna Menu
+        .c-main-content__col.c-main-content__col--side.o-col
+          h2.c-main-title.c-main-title--detail Informe-se
+          ul.c-side-nav
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Perguntas e Respostas
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Processos
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Links
+
+        // Coluna Conteúdo
+        .c-main-content__col.c-main-content__col--main.o-col
+          h1.c-main-title Links
+          p O escritório Paese, Ferreira & Advogados Associados assessora diversas entidades sindicais. Aqui os links para você acessar algumas delas:
+          hr
+
+          // Lista de Links
+          ul.c-links-list
+            li.c-links-list__item
+              a(href="#")
+                span.c-links-list__img
+                  img(src="/img/logo-adcap.png", alt="logo ADCAP")
+                span.c-links-list__name Associação dos Profissionais dos Correios – ADCAP-RS
+            li.c-links-list__item
+              a(href="#")
+                span.c-links-list__img
+                  img(src="/img/logo-aserghc.png", alt="logo ASERGHC")
+                span.c-links-list__name Associação dos Servidores do Grupo Hospitalar Conceição – ASERGHC
+            li.c-links-list__item
+              a(href="#")
+                span.c-links-list__img
+                  img(src="/img/logo-ashps.png", alt="logo ASHPS")
+                span.c-links-list__name Associação dos Servidores do Hospital de Pronto Socorro – ASHPS
+            li.c-links-list__item
+              a(href="#")
+                span.c-links-list__img
+                  img(src="/img/logo-fenasps.png", alt="logo FENASPS")
+                span.c-links-list__name Federação Nacional dos Sindicatos de Trabalhadores em Saúde, Trabalho, Previdência e Assistência Social - FENASPS
+            li.c-links-list__item
+              a(href="#")
+                span.c-links-list__img
+                  img(src="/img/logo-sergs.png", alt="logo SERGS")
+                span.c-links-list__name Sindicato dos Enfermeiros do Rio Grande do Sul – SERGS
+            li.c-links-list__item
+              a(href="#")
+                span.c-links-list__img
+                  img(src="/img/logo-sindifars.png", alt="logo SINDIFARS")
+                span.c-links-list__name Sindicato dos Farmacêuticos do Rio Grande do Sul – SINDIFARS
+            li.c-links-list__item
+              a(href="#")
+                span.c-links-list__img
+                  img(src="/img/logo-sindisaude.png", alt="logo SINDISAUDE")
+                span.c-links-list__name Sindicato dos Profissionais de Enfermagem, Técnicos, Duchistas, Massagistas e Empregados em Casas de Saúde do RS – SINDISAÚDE-RS
+            li.c-links-list__item
+              a(href="#")
+                span.c-links-list__img
+                  img(src="/img/logo-sindfaz.png", alt="logo SINDFAZ")
+                span.c-links-list__name Sindicato dos Servidores do Ministério da Fazenda no Rio Grande do Sul – SINDFAZ-RS
+            li.c-links-list__item
+              a(href="#")
+                span.c-links-list__img
+                  img(src="/img/logo-sinditestrs.png", alt="logo SINDITESTRS")
+                span.c-links-list__name Sindicato dos Técnicos em Segurança do Trabalho do Rio Grande do Sul – SINDTESTRS
+            li.c-links-list__item
+              a(href="#")
+                span.c-links-list__img
+                  img(src="/img/logo-sindisprev.png", alt="logo SINDISPREV")
+                span.c-links-list__name Sindicato dos Trabalhadores Federais da Saúde, Trabalho e Previdência no Rio Grande do Sul – SINDISPREV-RS
+            li.c-links-list__item
+              a(href="#")
+                span.c-links-list__img
+                  img(src="/img/logo-andes.png", alt="logo ANDES")
+                span.c-links-list__name Sindicato Nacional dos Docentes das Instituições de Ensino Superior – ANDES-SN

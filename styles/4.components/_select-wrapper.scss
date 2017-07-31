@@ -1,0 +1,26 @@
+.c-select-wrapper {
+  position: relative;
+  border: 1px solid #d0d0d0;
+
+  select {
+    display: block;
+    width: 100%;
+    line-height: 2;
+    height: 1.95em; // required by IE
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    height: 31px;
+    width: 31px;
+    background: $white url('../img/select-arrow.png') no-repeat center;
+    pointer-events: none;
+  }
+}

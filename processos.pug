@@ -1,0 +1,33 @@
+extends ./templates/layout.pug
+
+block vars
+  - var title = 'Processos | Informe-se |'
+  - var description = 'Este é o espaço institucional do escritório Paese, Ferreira & Advogados Associados. Aqui o usuário encontra informações básicas sobre nossas áreas de atuação, quem são os advogados de nossa equipe, quais as questões mais recorrentes de nossos clientes, links para instituições correlatas, artigos, publicações e notícias do mundo do trabalho.'
+
+block content
+  main#main-content.c-main-content
+    .o-content-block
+      .o-row
+        // Coluna Menu
+        .c-main-content__col.c-main-content__col--side.o-col
+          h2.c-main-title.c-main-title--detail Informe-se
+          ul.c-side-nav
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Perguntas e Respostas
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Processos
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Links
+
+        // Coluna Conteúdo
+        .c-main-content__col.c-main-content__col--main.o-col
+          h1.c-main-title Processos
+          p O primeiro passo para consultar seu processo é identificar em qual ramo da justiça ele tramita - Justiça do Trabalho, Federal ou Estadual.
+          p Leia com atenção as orientações abaixo e clique no site que você deseja consultar:
+          p 1. Se você possui ação trabalhista contra seu antigo ou atual empregador deve consultar o site da Justiça do Trabalho #[a(href="www.trt4.jus.br", target="_blank") www.trt4.jus.br], optando, pela 1ª instância, caso o processo esteja na Vara do Trabalho, ou pela 2ª instância, caso esteja no Tribunal Regional do Trabalho. Se o processo estiver na 3ª instância, no Tribunal Superior do Trabalho, clique #[a(href="www.tst.jus.br", target="_blank") www.tst.jus.br].
+          p 2. Caso a sua ação esteja tramitando na Justiça Federal (ações ordinárias contra a União Federal e INSS; ações do FGTS contra a Caixa Econômica Federal; ações previdenciárias; etc.), você deve consultar os sites da Justiça Federal da 1ª instância #[a(href="www2.jfrs.jus.br", target="_blank") www2.jfrs.jus.br] ou, caso o seu processo esteja em grau de recurso, da 2ª instância #[a(href="www2.trf4.jus.br/trf4", target="_blank") www2.trf4.jus.br/trf4]. Se o seu processo estiver nos tribunais de Brasília/DF Vide item 4.
+          p 3. Se o seu processo tramita na Justiça Estadual (ações ordinárias contra o Estado do RGS, etc.) consulte #[a(href="www.tjrs.jus.br", target="_blank") www.tjrs.jus.br].
+          p 4. Se o seu processo encontra-se nos tribunais em Brasília/DF, você pode consultá-lo pelos sites do Superior Tribunal de Justiça #[a(href="www.stj.jus.br", target="_blank") www.stj.jus.br] ou do Supremo Tribunal Federal #[a(href="www.stf.jus.br", target="_blank") www.stf.jus.br].
+
+
+

@@ -1,0 +1,30 @@
+extends ./templates/layout.pug
+
+block vars
+  - var title = 'Apresentação | Quem Somos |'
+  - var description = 'Este é o espaço institucional do escritório Paese, Ferreira & Advogados Associados. Aqui o usuário encontra informações básicas sobre nossas áreas de atuação, quem são os advogados de nossa equipe, quais as questões mais recorrentes de nossos clientes, links para instituições correlatas, artigos, publicações e notícias do mundo do trabalho.'
+
+block content
+  main#main-content.c-main-content
+    .o-content-block
+      .o-row
+
+        // Coluna Menu
+        .c-main-content__col.c-main-content__col--side.o-col
+          h2.c-main-title.c-main-title--detail Quem Somos
+          ul.c-side-nav
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Apresentação
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Equipe
+
+        // Coluna Conteúdo
+        .c-main-content__col.c-main-content__col--main.o-col
+          h1.c-main-title Apresentação
+          p Nosso Escritório foi constituído em Porto Alegre (RS) em 1989, tendo como fundadores os advogados Raquel Paese, Glênio Ohlweiler Ferreira e Renato Kliemann Paese. A sociedade de advogados é integrada hoje por dezenove sócios.
+          p O Escritório, através de seus membros, procura sempre aliar à atividade profissional exercida com competência técnico-jurídica o engajamento político-social. É a partir desse princípio que consolidamos, na prática, o exercício de uma advocacia voltada para a defesa e a proteção dos direitos sociais e em especial dos trabalhadores – servidores públicos e da iniciativa privada – e o assessoramento a entidades sindicais e associativas.
+          p A atuação na defesa de direitos individuais e coletivos é exercida nas áreas do Direito Sindical (sindicatos de trabalhadores e associações profissionais), do Direito do Trabalho (trabalhadores pelo regime CLT), do Direito Administrativo (servidores públicos), do Direito Previdenciário (aposentados e beneficiários em geral) e na área do Direito Acidentário (acidentes do trabalho e doenças profissionais).
+          p Quanto aos nossos clientes na área coletiva, há várias entidades associativas e sindicais do RS e de âmbito nacional, entre as quais: Associação dos Servidores do Grupo Hospitalar Conceição; Associação dos Servidores do sHospital de Pronto Socorro de Porto Alegre; Associação dos Profissionais dos Correios – Núcleo RS; Sindicato dos Enfermeiros do RS; Sindicato dos Farmacêuticos do RS; Sindisaúde/RS; Sindicato dos Servidores do Ministério da Fazenda no RS; Sindicato dos Trabalhadores Federais da Saúde, Trabalho e Previdência do RS; Sindicato dos Técnicos de Segurança do Trabalho; Sindicato Nacional dos Docentes das Instituições de Ensino Superior e Federação Nacional dos Sindicatos de Trabalhadores em Saúde, Trabalho, Previdência e Assistência Social.
+          p Estamos localizados na Rua dos Andradas, nº 1121, 6º e 11º andares. Contamos com uma estrutura em que trabalham mais de cem profissionais: advogados, estagiários e apoio administrativo, além de peritos técnicos parceiros.
+
+

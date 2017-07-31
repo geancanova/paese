@@ -1,0 +1,11 @@
+.c-captcha {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 30px;
+
+  @media (max-width: 439px) {
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}

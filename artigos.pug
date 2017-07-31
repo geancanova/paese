@@ -1,0 +1,60 @@
+extends ./templates/layout.pug
+
+block vars
+  - var title = 'Artigos | Publicações |'
+  - var description = 'Este é o espaço institucional do escritório Paese, Ferreira & Advogados Associados. Aqui o usuário encontra informações básicas sobre nossas áreas de atuação, quem são os advogados de nossa equipe, quais as questões mais recorrentes de nossos clientes, links para instituições correlatas, artigos, publicações e notícias do mundo do trabalho.'
+
+block content
+  main#main-content.c-main-content
+    .o-content-block
+      .o-row
+        // Coluna Menu
+        .c-main-content__col.c-main-content__col--side.o-col
+          h2.c-main-title.c-main-title--detail Publicações
+          ul.c-side-nav
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Artigos
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Boletins Informativos
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Cartilhas
+
+        // Coluna Conteúdo
+        .c-main-content__col.c-main-content__col--main.o-col
+          h1.c-main-title Artigos
+
+          .c-publication
+            .o-row
+              .o-col
+                p Este é um espaço de nosso site destinado à produção intelectual de nossos advogados e de pessoas convidadas a colaborar com temas atualizados de grande interesse de nosso público e de nossa atividade profissional.
+                p Na revista virtual é possível pesquisar por palavras-chave, imprimir os textos de interesse, salvar no computador para leitura posterior e ainda ampliar o tamanho da página para leitura instantânea. Esperamos que você tenha uma boa leitura e se puder nos mande sua opinião acessando a página do Fale Conosco. Desde já obrigado por nos acessar.
+              .c-publication__col-img.o-col
+                a(href="#")
+                  img(src="/img/capa-artigo.png", alt="capa artigo", class="c-publication__img c-publication__img--article")
+                  h3.c-publication__title Reflexão - Direitos Sociais em Debate
+                  span.c-publication__date março de 2011
+          hr
+
+          // Lista de Mídia
+          ul.c-media-list
+            li.c-media-list__item
+              a(href="#")
+                span.c-media-list__date 16/03/2017
+                h2.c-media-list__title Estabilidade provisória da gestante no contrato de trabalho por tempo determinado
+                p Por Marília Gabriela
+            li.c-media-list__item
+              a(href="#")
+                span.c-media-list__date 16/03/2017
+                h2.c-media-list__title Estabilidade provisória da gestante no contrato de trabalho por tempo determinado
+                p Por Marília Gabriela
+            li.c-media-list__item
+              a(href="#")
+                span.c-media-list__date 16/03/2017
+                h2.c-media-list__title Estabilidade provisória da gestante no contrato de trabalho por tempo determinado
+                p Por Marília Gabriela
+            li.c-media-list__item
+              a(href="#")
+                span.c-media-list__date 16/03/2017
+                h2.c-media-list__title Estabilidade provisória da gestante no contrato de trabalho por tempo determinado
+                p Por Marília Gabriela
+

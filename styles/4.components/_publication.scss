@@ -1,0 +1,22 @@
+.c-publication {
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  &__col-img {
+    width: 300px;
+    overflow: hidden;
+  }
+
+  &__img {
+    &--article {
+      float: left;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+    margin: 0;
+  }
+}

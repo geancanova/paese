@@ -1,0 +1,21 @@
+{
+  "name": "paese",
+  "description": "paese institutional site",
+  "main": "gulpfile.js",
+  "authors": [
+    "Geancarlo Canova"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Errec/pug-sass-boilerplate-starter-kit",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

@@ -1,0 +1,17 @@
+.c-partners {
+  &__title {
+    font-size: 16px;
+
+    span {
+      font-weight: 400;
+    }
+  }
+  &__col-img {
+    text-align: center;
+
+    @media (min-width: $screen-sm) {
+      width: 200px;
+      text-align: left;
+    }
+  }
+}

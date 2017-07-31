@@ -1,0 +1,96 @@
+extends ./templates/layout.pug
+
+block vars
+  - var title = 'Notícias |'
+  - var description = 'Este é o espaço institucional do escritório Paese, Ferreira & Advogados Associados. Aqui o usuário encontra informações básicas sobre nossas áreas de atuação, quem são os advogados de nossa equipe, quais as questões mais recorrentes de nossos clientes, links para instituições correlatas, artigos, publicações e notícias do mundo do trabalho.'
+
+block content
+  main#main-content.c-main-content
+    .o-content-block
+      .o-row
+        // Coluna Menu
+        .c-main-content__col.c-main-content__col--side.o-col
+          h2.c-main-title.c-main-title--detail Notícias
+          ul.c-side-nav
+            li.c-side-nav__item
+              a(href="#").c-side-nav__link Vídeos
+
+        // Coluna Conteúdo
+        .c-main-content__col.c-main-content__col--main.o-col
+          .o-row.o-row--rtl.o-row--vmiddle
+            .o-col.o-col--search
+              // Busca
+              form.c-search
+                .c-form-control
+                  input.c-search__input.o-input
+                  button.c-search__btn.o-btn.o-btn--primary Buscar
+            .o-col
+              h1.c-main-title Notícias
+
+          // Lista de Mídia
+          ul.c-media-list
+            li.c-media-list__item
+              .c-media-list__img
+                a(href="#")
+                  img(src="https://placeimg.com/184/137/people", alt="")
+              .c-media-list__content
+                a(href="#")
+                  span.c-media-list__date 16/03/2017
+                  h2.c-media-list__title Marcha reúne milhares e expõe unidade inédita contra reformas de Temer
+                  p Milhares de pessoas participaram, no início da noite desta quarta-feira (15), da marcha que encerrou a jornada de mobilização contra a Reforma da Previdência em Porto Alegre. Segundo estimativa dos organizadores, cerca de 10 mil pessoas participaram da manifestação...
+            li.c-media-list__item
+              .c-media-list__img
+                a(href="#")
+                  img(src="https://placeimg.com/184/137/people", alt="")
+              .c-media-list__content
+                a(href="#")
+                  span.c-media-list__date 16/03/2017
+                  h2.c-media-list__title Marcha reúne milhares e expõe unidade inédita contra reformas de Temer
+                  p Milhares de pessoas participaram, no início da noite desta quarta-feira (15), da marcha que encerrou a jornada de mobilização contra a Reforma da Previdência em Porto Alegre. Segundo estimativa dos organizadores, cerca de 10 mil pessoas participaram da manifestação...
+            li.c-media-list__item
+              .c-media-list__img
+                a(href="#")
+                  img(src="https://placeimg.com/184/137/people", alt="")
+              .c-media-list__content
+                a(href="#")
+                  span.c-media-list__date 16/03/2017
+                  h2.c-media-list__title Marcha reúne milhares e expõe unidade inédita contra reformas de Temer
+                  p Milhares de pessoas participaram, no início da noite desta quarta-feira (15), da marcha que encerrou a jornada de mobilização contra a Reforma da Previdência em Porto Alegre. Segundo estimativa dos organizadores, cerca de 10 mil pessoas participaram da manifestação...
+            li.c-media-list__item
+              .c-media-list__img
+                a(href="#")
+                  img(src="https://placeimg.com/184/137/people", alt="")
+              .c-media-list__content
+                a(href="#")
+                  span.c-media-list__date 16/03/2017
+                  h2.c-media-list__title Marcha reúne milhares e expõe unidade inédita contra reformas de Temer
+                  p Milhares de pessoas participaram, no início da noite desta quarta-feira (15), da marcha que encerrou a jornada de mobilização contra a Reforma da Previdência em Porto Alegre. Segundo estimativa dos organizadores, cerca de 10 mil pessoas participaram da manifestação...
+            li.c-media-list__item
+              .c-media-list__img
+                a(href="#")
+                  img(src="https://placeimg.com/184/137/people", alt="")
+              .c-media-list__content
+                a(href="#")
+                  span.c-media-list__date 16/03/2017
+                  h2.c-media-list__title Marcha reúne milhares e expõe unidade inédita contra reformas de Temer
+                  p Milhares de pessoas participaram, no início da noite desta quarta-feira (15), da marcha que encerrou a jornada de mobilização contra a Reforma da Previdência em Porto Alegre. Segundo estimativa dos organizadores, cerca de 10 mil pessoas participaram da manifestação...
+
+          // Paginação
+          ul.c-pagination
+            li.c-pagination__item.is-active
+              a(href="#").c-pagination__link 1
+            li.c-pagination__item
+              a(href="#").c-pagination__link 2
+            li.c-pagination__item
+              a(href="#").c-pagination__link 3
+            li.c-pagination__item
+              a(href="#").c-pagination__link 4
+            li.c-pagination__item
+              a(href="#").c-pagination__link 5
+            li.c-pagination__item
+              a(href="#").c-pagination__link 6
+            li.c-pagination__item
+              a(href="#").c-pagination__link Próxima
+            li.c-pagination__item
+              a(href="#").c-pagination__link Última
+
