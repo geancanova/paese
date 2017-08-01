@@ -1,7 +1,9 @@
 .c-occupation-area {
-  background-color: $gray;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  > .o-content-block {
+    background-color: $gray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   a {
     color: $white;

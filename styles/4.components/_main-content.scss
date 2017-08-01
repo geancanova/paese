@@ -1,6 +1,11 @@
 .c-main-content {
   overflow: hidden;
 
+  > .o-content-block {
+    background-color: $white;
+    overflow: hidden;
+  }
+
   &__col {
     padding-top: 30px;
     padding-bottom: 30px;

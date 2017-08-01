@@ -1,19 +1,18 @@
 .c-main-header {
   position: relative;
   z-index: 3;
-  border-bottom: 1px solid $gray-medium;
-  box-shadow: 0 1px 0 rgba($gray-medium, .5);
 
   &__content {
-    position: relative;
-    padding-top: 10px;
+    background-color: $white;
+    border-bottom: 1px solid $gray-medium;
+    box-shadow: 0 1px 0 rgba($gray-medium, .5);
     padding-bottom: 10px;
   }
 
   &__phone {
     position: absolute;
     top: 0;
-    right: 5.505142857142857%;
+    right: 0;
     display: none;
     background-color: $gray-medium;
     color: $white;

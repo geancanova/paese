@@ -1,7 +1,11 @@
 .c-main-footer {
-  background-color: $gray-medium;
   color: $white;
-  padding-top: 30px;
+
+  > .o-content-block {
+    background-color: $gray-medium;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   &__col {
     @media (max-width: $screen-sm-max) {
@@ -44,9 +48,10 @@
   }
 
   &__bar {
+    max-width: 1225px;
     background-color: $gray-dark;
+    margin: 0 auto;
     text-align: center;
-    margin-top: 30px;
 
     p {
       font-size: 12px;
